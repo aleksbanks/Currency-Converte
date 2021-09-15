@@ -12,7 +12,11 @@
             <div class="course-item card card-body">
               <div class="course-item-title">{{this.Name}}</div>
               <div class="course-item-value">{{this.Value}}</div>
-              <button class="addToFave">☆</button>
+              {{#if this.Favourite}}
+              <button name={{this.CharCode}} class="addToFave fav">☆</button>
+              {{else}}
+              <button name={{this.CharCode}} class="addToFave">☆</button>
+              {{/if}}
             </div>
           </div>
           {{/each}}
