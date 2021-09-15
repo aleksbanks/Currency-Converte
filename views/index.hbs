@@ -1,0 +1,23 @@
+<div class="container pt-5 pb-5">
+  <div class="">
+    <div class="col-6">
+      <div class="card p-3" style="min-width: 800px;">
+        <div>
+          <a class="link" href="/convert">Перейти к кальркулятору</a>
+        </div>
+        <form>
+          <h1 class="h2 mb-4">Страница текущего курса валют к рублю</h1>
+          {{#each allCurrencies}}
+          <div class="courses">
+            <div class="course-item card card-body">
+              <div class="course-item-title">{{this.Name}}</div>
+              <div class="course-item-value">{{this.Value}}</div>
+              <button class="addToFave">☆</button>
+            </div>
+          </div>
+          {{/each}}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

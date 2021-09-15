@@ -1,0 +1,59 @@
+.courses {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.courses > *:first-child {
+  margin-left: 0;
+}
+
+.courses > *:last-child {
+  margin-right: 0;
+}
+
+.courses > * {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.course-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.course-item-title {
+  width: 210px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.course-item-value {
+  width: 210px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.course-item-value.top {
+  color: rgb(255, 51, 51);
+}
+
+.course-item-value.bottom {
+  color: rgb(19, 189, 61);
+}
+
+.card {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.addToFave, .addToFave:hover, .addToFave:focus, .addToFave:active {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+}
+
+.link {
+  color:black;
+  justify-self: end;
+}
+
+

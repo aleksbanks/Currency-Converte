@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card my-2">
+    <div class="row p-2 mb-1">
+      <div class="col">
+        <select disabled class="form-control" id="exampleFormControlSelect1">
+          <option value="RUB" selected>RUB — Рубли</option>
+        </select>
+      </div>
+      <div class="col">
+        <select id="select" class="form-control resultSelect" id="exampleFormControlSelect1">
+          {{#each allCurrencies}}
+          <option value={{this.CharCode}}>{{this.CharCode}} — {{this.Name}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+    <div class="row p-2 mb-1">
+      <div class="col">
+        <input id="input" type="number" name="rubInput" class="form-control rubInput" id="name" autofocus />
+      </div>
+      <div class="col">
+        <input id="result" type="number" result="input" name="resultInput" class="form-control resultInput" id="name" />
+      </div>
+    </div>
+  </div>
+  <a class="link p-2" href="/">Назад</a>
+</div>
